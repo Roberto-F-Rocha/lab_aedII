@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    char c; //variavel para armazenar
-    int i = 0, count = 0;
+    char c; 
+    int i, count = 0;
     
-    do{
+    for(i = 0; i < 127; i++){
     	c = i;   
     	printf(" %c", c);
     	count++;
@@ -12,8 +12,7 @@ int main(){
         	printf("\n");
         	count = 0;
     	}
-    	i++;
-    }while(i <= 127);
+    }
     
  return(0);
 }
