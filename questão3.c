@@ -1,7 +1,7 @@
 ##include <stdio.h>
 
-int triplopitagorico(int a, int b, int c){
- return (a * a + b * b) == c * c;
+int triplopitagorico(int cateto1, int cateto2, int hipotenusa){
+ return (cateto1 * cateto1 + cateto2 * cateto2) == hipotenusa * hipotenusa;
 }
 
 int main(){
