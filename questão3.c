@@ -1,24 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-int ladosPitagoricos(int limit){
-    int c, a, b, i, j;
-    
-    for(i = 1; i < limit; i++){
-        for(j = 1; j < limit; j++){
-            
-			a = pow(i,2);
-            b = pow(j,2);
-            c = sqrt((a+b));
-            
-            if((a + b) == pow(c,2)){
-                printf("%i %i %i\n", i, j, c);
-            }
-        }
-    }
+##include <stdio.h>
+
+int triplopitagorico(int a, int b, int c){
+ return (a * a + b * b) == c * c;
 }
 
 int main(){
-	ladosPitagoricos(20);
- return(0);	
+    int limite, hipotenusa, cateto1, cateto2;
+
+    printf("Digite o valor limite para encontrar os triplos pitagoricos: ");
+    scanf("%d", &limite);
+
+    printf("Triplos pitagoricos:\n");
+
+    for(hipotenusa = 1; hipotenusa <= limite; hipotenusa++){
+    	
+        for(cateto1 = 1; cateto1 < hipotenusa; cateto1++){
+        	
+            for(cateto2 = cateto1 + 1; cateto2 < hipotenusa; cateto2++){
+            	
+                if(triplopitagorico(cateto1, cateto2, hipotenusa)){	
+                    printf("(%d, %d, %d)\n", cateto1, cateto2, hipotenusa);
+                }
+            }
+        }
+    }
+ return(0);
 }
