@@ -1,7 +1,6 @@
 //Defina uma fun¸c˜ao recursiva que, dado os valores inteiros de x1 e x2, determine y = x1x2.
 
 #include <stdio.h>
-#include <stdlib.h>
 
 int produtoRecursivo(int x1, int x2){
     if(x2 == 0){
