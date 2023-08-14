@@ -1,3 +1,6 @@
+//Defina uma fun¸c˜ao chamada diasDeAula que calcula quantas aulas de laborat´orio temos dado
+//como entrada: Dia de hoje(dia,mˆes,ano) e Ultimo dia do Semestre(dia,mˆes,ano).
+
 #include <stdio.h>
 
 typedef struct{

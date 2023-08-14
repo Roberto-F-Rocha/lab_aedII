@@ -1,3 +1,8 @@
+// Defina uma fun¸c˜ao para inverter um n´umero. Exemplo:
+// f(1234) = 4321
+// (a) No formato n˜ao recursivo;
+// (b) No formato recursivo.
+
 #include <stdio.h>
 
 int inverterNumeroRecursivo(int n, int invertido){
