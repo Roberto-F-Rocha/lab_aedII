@@ -13,7 +13,7 @@ int main(){
     	count++;
     	if(count == 10){
         	printf("\n");
-        	count = 0;
+        	count = 0; //reseta o valor de 'count' para 0, para começar a contar novamente.
     	}
     }
     
