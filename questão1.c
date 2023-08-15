@@ -10,7 +10,7 @@ int main(){
     for(i = 0; i < 127; i++){
     	c = i;   
     	printf(" %c", c);
-    	count++;
+    	count++; //após cada caractere ser impresso, essa linha é executada incrementando +1.
     	if(count == 10){
         	printf("\n");
         	count = 0; //reseta o valor de 'count' para 0, para começar a contar novamente.
