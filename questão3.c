@@ -12,7 +12,7 @@ int triplopitagorico(int a, int b, int c){
 }
 
 int main(){
-    int limite, hipotenusa, cateto1, cateto2;
+    int limite, hipotenusa, cateto1, cateto2 ;
 
     printf("Digite o valor limite para encontrar os triplos pitagoricos: ");
     scanf("%d", &limite);
@@ -20,16 +20,16 @@ int main(){
     printf("Triplos pitagoricos:\n");
 
     for(hipotenusa = 1; hipotenusa <= limite; hipotenusa++){
-    	printf("hipotenusa: %i\n cateto1: %i\n, cateto2: %i\n", hipotenusa, cateto1, cateto2);
+    	printf("hipotenusa: %i\ncateto1: %i\ncateto2: %i\n\n", hipotenusa, cateto1, cateto2);
     	
-        for(cateto1 = 1; cateto1 < hipotenusa; cateto1++){
-        	printf("hipotenusa: %i\n cateto1: %i\n, cateto2: %i\n", hipotenusa, cateto1, cateto2);
+        for(cateto1 = 1; cateto1 <= hipotenusa; cateto1++){
+        	printf("hipotenusa: %i\ncateto1: %i\ncateto2: %i\n\n", hipotenusa, cateto1, cateto2);
         	
             for(cateto2 = cateto1 + 1; cateto2 < hipotenusa; cateto2++){
-            	printf("hipotenusa: %i\n cateto1: %i\n, cateto2: %i\n", hipotenusa, cateto1, cateto2);
+            	printf("hipotenusa: %i\ncateto1: %i\ncateto2: %i\n\n", hipotenusa, cateto1, cateto2);
             	
                 if(triplopitagorico(cateto1, cateto2, hipotenusa)){	
-                    printf("(%d, %d, %d)\n", cateto1, cateto2, hipotenusa);
+                    printf("(%d, %d, %d)\n\n", cateto1, cateto2, hipotenusa);
                 }
             }
         }
